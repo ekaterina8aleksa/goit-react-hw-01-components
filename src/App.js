@@ -1,4 +1,4 @@
-// import React from "react";
+import React from 'react';
 
 import user from './user.json';
 import statisticalData from './statistical-data.json';
