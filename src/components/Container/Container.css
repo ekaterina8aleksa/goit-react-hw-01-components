@@ -1,0 +1,11 @@
+.container {
+  outline: 1px solid tomato;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  text-align: center;
+}
+/*# sourceMappingURL=Container.css.map */

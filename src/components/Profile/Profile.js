@@ -6,9 +6,13 @@ import './Profile.scss';
 const Profile = ({ avatar, name, tag, location, stats }) => {
   return (
     <div className="profile">
-      <div className="description">
-        <img src={avatar} alt="Аватар пользователя" className="avatar" />
-        <p className="name">{name}</p>
+      <div className="profile__description">
+        <img
+          src={avatar}
+          alt="Аватар пользователя"
+          className="profile__avatar"
+        />
+        <p className="profile__name">{name}</p>
         <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
       </div>
