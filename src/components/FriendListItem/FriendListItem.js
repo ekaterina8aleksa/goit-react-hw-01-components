@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './FriendListItem.scss';
+
 const FriendListItem = ({ avatar, name, isOnline }) => (
   <>
     {isOnline ? (
@@ -9,7 +11,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => (
       <span className="status_red"></span>
     )}
     <img className="avatar" src={avatar} alt={name} width="48" />
-    <p className={name}></p>
+    <p className={name}>{name}</p>
   </>
 );
 

@@ -1,0 +1,22 @@
+.status_green {
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  border-radius: 50%;
+  position: absolute;
+  top: -20%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+.avatar {
+  margin-bottom: 15px;
+}
+
+.status_red {
+  @extend .status_green;
+  background-color: red;
+}
+
+p {
+  font-size: 20px;
+}

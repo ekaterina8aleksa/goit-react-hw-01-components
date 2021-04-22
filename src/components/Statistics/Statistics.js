@@ -1,41 +1,27 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
+
+import './Statistics.scss';
 
 const Statistics = ({ title, stats }) => {
   return (
     <section className="statistics">
-      {title && <h2 className="title">{title}</h2>}
+      {title && <h2 className="statistics__title">{title}</h2>}
 
-      <ul className="stat-list">
-        {stats.map((statEl) => (
-          <li key={statEl.id} className="item">
-            <span className="label">{statEl.label} </span>
-            <span className="percentage">{statEl.percentage}%</span>
+      <ul className="statistics__stat-list">
+        {stats.map(statEl => (
+          <li key={statEl.id} className="statistics__item">
+            <span className="statistics__label">{statEl.label} </span>
+            <span className="statistics__percentage">{statEl.percentage}%</span>
           </li>
         ))}
-        {/* <li className="item">
-          <span className="label">.docx</span>
-          <span className="percentage">4%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp3</span>
-          <span className="percentage">14%</span>
-        </li>
-        <li className="item">
-          <span className="label">.pdf</span>
-          <span className="percentage">41%</span>
-        </li>
-        <li className="item">
-          <span className="label">.mp4</span>
-          <span className="percentage">12%</span>
-        </li> */}
       </ul>
     </section>
   );
 };
 
 Statistics.defaultProps = {
-  title: "",
+  title: '',
 };
 
 Statistics.propTypes = {
@@ -45,7 +31,7 @@ Statistics.propTypes = {
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-    })
+    }),
   ),
 };
 

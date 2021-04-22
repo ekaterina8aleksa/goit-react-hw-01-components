@@ -13,22 +13,22 @@ const Profile = ({ avatar, name, tag, location, stats }) => {
           className="profile__avatar"
         />
         <p className="profile__name">{name}</p>
-        <p className="tag">@{tag}</p>
-        <p className="location">{location}</p>
+        <p className="profile__tag">@{tag}</p>
+        <p className="profile__location">{location}</p>
       </div>
 
-      <ul className="stats">
+      <ul className="profile__stats">
         <li>
-          <span className="label">Followers</span>
-          <span className="quantity">{stats.followers}</span>
+          <span className="profile__label">Followers</span>
+          <span className="profile__quantity">{stats.followers}</span>
         </li>
         <li>
-          <span className="label">Views</span>
-          <span className="quantity">{stats.views}</span>
+          <span className="profile__label">Views</span>
+          <span className="profile__quantity">{stats.views}</span>
         </li>
         <li>
-          <span className="label">Likes</span>
-          <span className="quantity">{stats.likes}</span>
+          <span className="profile__label">Likes</span>
+          <span className="profile__quantity">{stats.likes}</span>
         </li>
       </ul>
     </div>
