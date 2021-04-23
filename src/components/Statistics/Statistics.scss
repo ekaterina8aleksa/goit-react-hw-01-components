@@ -35,20 +35,4 @@
     width: 100%;
     background-color: rgb(233, 233, 233);
   }
-
-  &__stat-list &__item:nth-child(1) {
-    background-color: rgb(86, 107, 228);
-  }
-  &__stat-list &__item:nth-child(2) {
-    background-color: rgb(228, 86, 86);
-  }
-  &__stat-list &__item:nth-child(3) {
-    background-color: rgb(80, 187, 98);
-  }
-  &__stat-list &__item:nth-child(4) {
-    background-color: rgb(158, 168, 64);
-  }
-  &__stat-list &__item:nth-child(5) {
-    background-color: rgb(86, 188, 228);
-  }
 }

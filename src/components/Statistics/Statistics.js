@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import randomColor from 'randomcolor';
 
 import './Statistics.scss';
 
@@ -10,7 +11,11 @@ const Statistics = ({ title, stats }) => {
 
       <ul className="statistics__stat-list">
         {stats.map(statEl => (
-          <li key={statEl.id} className="statistics__item">
+          <li
+            style={{ backgroundColor: randomColor() }}
+            key={statEl.id}
+            className="statistics__item"
+          >
             <span className="statistics__label">{statEl.label} </span>
             <span className="statistics__percentage">{statEl.percentage}%</span>
           </li>
